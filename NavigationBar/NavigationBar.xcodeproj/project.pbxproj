@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B734F7C23F92FAD0038ACC5 /* IonIconPDF in Resources */ = {isa = PBXBuildFile; fileRef = 3B734F7B23F92FAC0038ACC5 /* IonIconPDF */; };
 		3BAAA31323EDBCCD00C49A8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAA31223EDBCCD00C49A8D /* AppDelegate.swift */; };
 		3BAAA31523EDBCCD00C49A8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAA31423EDBCCD00C49A8D /* SceneDelegate.swift */; };
 		3BAAA31723EDBCCD00C49A8D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAA31623EDBCCD00C49A8D /* FirstViewController.swift */; };
@@ -18,7 +19,6 @@
 		3BAAA33723EDBCD000C49A8D /* NavigationBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAA33623EDBCD000C49A8D /* NavigationBarUITests.swift */; };
 		3BAAA34523EDBF8100C49A8D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAA34423EDBF8100C49A8D /* ThirdViewController.swift */; };
 		3BAC75B523F8FEAD00EF9265 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAC75B423F8FEAD00EF9265 /* FourthViewController.swift */; };
-		3BAC75B723F9150300EF9265 /* IonIconPDF in Resources */ = {isa = PBXBuildFile; fileRef = 3BAC75B623F9150300EF9265 /* IonIconPDF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B734F7B23F92FAC0038ACC5 /* IonIconPDF */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IonIconPDF; sourceTree = "<group>"; };
 		3BAAA30F23EDBCCD00C49A8D /* NavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BAAA31223EDBCCD00C49A8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BAAA31423EDBCCD00C49A8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +57,6 @@
 		3BAAA33823EDBCD000C49A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BAAA34423EDBF8100C49A8D /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		3BAC75B423F8FEAD00EF9265 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
-		3BAC75B623F9150300EF9265 /* IonIconPDF */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IonIconPDF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +87,11 @@
 		3BAAA30623EDBCCD00C49A8D = {
 			isa = PBXGroup;
 			children = (
+				3B734F7B23F92FAC0038ACC5 /* IonIconPDF */,
 				3BAAA31123EDBCCD00C49A8D /* NavigationBar */,
 				3BAAA32A23EDBCCF00C49A8D /* NavigationBarTests */,
 				3BAAA33523EDBCD000C49A8D /* NavigationBarUITests */,
 				3BAAA31023EDBCCD00C49A8D /* Products */,
-				3BAC75B623F9150300EF9265 /* IonIconPDF */,
 			);
 			sourceTree = "<group>";
 		};
@@ -247,7 +247,7 @@
 				3BAAA32123EDBCCF00C49A8D /* LaunchScreen.storyboard in Resources */,
 				3BAAA31E23EDBCCF00C49A8D /* Assets.xcassets in Resources */,
 				3BAAA31C23EDBCCD00C49A8D /* Main.storyboard in Resources */,
-				3BAC75B723F9150300EF9265 /* IonIconPDF in Resources */,
+				3B734F7C23F92FAD0038ACC5 /* IonIconPDF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
