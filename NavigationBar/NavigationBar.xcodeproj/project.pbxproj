@@ -17,6 +17,8 @@
 		3BAAA32C23EDBCCF00C49A8D /* NavigationBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAA32B23EDBCCF00C49A8D /* NavigationBarTests.swift */; };
 		3BAAA33723EDBCD000C49A8D /* NavigationBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAA33623EDBCD000C49A8D /* NavigationBarUITests.swift */; };
 		3BAAA34523EDBF8100C49A8D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAA34423EDBF8100C49A8D /* ThirdViewController.swift */; };
+		3BAC75B523F8FEAD00EF9265 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAC75B423F8FEAD00EF9265 /* FourthViewController.swift */; };
+		3BAC75B723F9150300EF9265 /* IonIconPDF in Resources */ = {isa = PBXBuildFile; fileRef = 3BAC75B623F9150300EF9265 /* IonIconPDF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		3BAAA33623EDBCD000C49A8D /* NavigationBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarUITests.swift; sourceTree = "<group>"; };
 		3BAAA33823EDBCD000C49A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BAAA34423EDBF8100C49A8D /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		3BAC75B423F8FEAD00EF9265 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		3BAC75B623F9150300EF9265 /* IonIconPDF */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IonIconPDF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 				3BAAA32A23EDBCCF00C49A8D /* NavigationBarTests */,
 				3BAAA33523EDBCD000C49A8D /* NavigationBarUITests */,
 				3BAAA31023EDBCCD00C49A8D /* Products */,
+				3BAC75B623F9150300EF9265 /* IonIconPDF */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +113,7 @@
 				3BAAA31623EDBCCD00C49A8D /* FirstViewController.swift */,
 				3BAAA31823EDBCCD00C49A8D /* SecondViewController.swift */,
 				3BAAA34423EDBF8100C49A8D /* ThirdViewController.swift */,
+				3BAC75B423F8FEAD00EF9265 /* FourthViewController.swift */,
 				3BAAA31A23EDBCCD00C49A8D /* Main.storyboard */,
 				3BAAA31D23EDBCCF00C49A8D /* Assets.xcassets */,
 				3BAAA31F23EDBCCF00C49A8D /* LaunchScreen.storyboard */,
@@ -241,6 +247,7 @@
 				3BAAA32123EDBCCF00C49A8D /* LaunchScreen.storyboard in Resources */,
 				3BAAA31E23EDBCCF00C49A8D /* Assets.xcassets in Resources */,
 				3BAAA31C23EDBCCD00C49A8D /* Main.storyboard in Resources */,
+				3BAC75B723F9150300EF9265 /* IonIconPDF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BAC75B523F8FEAD00EF9265 /* FourthViewController.swift in Sources */,
 				3BAAA31923EDBCCD00C49A8D /* SecondViewController.swift in Sources */,
 				3BAAA31723EDBCCD00C49A8D /* FirstViewController.swift in Sources */,
 				3BAAA34523EDBF8100C49A8D /* ThirdViewController.swift in Sources */,

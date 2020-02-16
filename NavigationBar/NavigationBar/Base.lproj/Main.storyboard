@@ -90,6 +90,7 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="rKK-8I-YMq" kind="relationship" relationship="viewControllers" id="HI4-gw-ZmA"/>
+                        <segue destination="JpH-be-2vw" kind="relationship" relationship="viewControllers" id="G0J-zx-xEu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -165,6 +166,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SmQ-q2-snK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749" y="414"/>
+        </scene>
+        <!--Fourth-->
+        <scene sceneID="k1j-3Q-dlX">
+            <objects>
+                <viewController title="Fourth" id="JpH-be-2vw" customClass="FourthViewController" customModule="NavigationBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dcc-tX-BxY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nG8-E2-Wlp">
+                                <rect key="frame" x="127" y="265" width="149" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="In App"/>
+                                <connections>
+                                    <action selector="web:" destination="JpH-be-2vw" eventType="touchUpInside" id="Uhr-aO-Mk6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfN-k5-5D1">
+                                <rect key="frame" x="162" y="523" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="New Browser"/>
+                                <connections>
+                                    <action selector="newBrowser:" destination="JpH-be-2vw" eventType="touchUpInside" id="eeI-M1-qpU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="DkR-Me-Rj0"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="b7q-b0-sB0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gnR-WW-BlX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628.985507246377" y="693.75"/>
         </scene>
     </scenes>
     <resources>
