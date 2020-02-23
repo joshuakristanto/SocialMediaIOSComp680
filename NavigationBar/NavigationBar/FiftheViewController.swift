@@ -1,4 +1,11 @@
 //
+//  FiftheViewController.swift
+//  NavigationBar
+//
+//  Created by Joshua Kristanto on 2/22/20.
+//  Copyright © 2020 Joshua Kristanto. All rights reserved.
+//
+//
 //  SecondViewController.swift
 //  NavigationBar
 //
@@ -8,19 +15,34 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class FifthViewController: UICollectionViewController {
 
 //    @IBOutlet weak var total: UILabel!
 //    @IBOutlet weak var price: UITextField!
 //    @IBOutlet weak var saleTax: UITextField!
-  static func calculate(price: Double) ->Double {
-            let prices = price + 10
-               
-               return prices
-       
-       }
+    
     @IBOutlet weak var imageView: UIStackView!
     
+    func collectViewUI(image: UIImage?) -> UICollectionView{
+        let vUI = UICollectionView()
+        vUI.addSubview(viewUI(image: image))
+        return vUI
+    }
+    
+    
+    func viewUI(image: UIImage?) -> UIView {
+        let vUI = UIView()
+    
+        vUI.addSubview(imageViewUI(image: image))
+        return  vUI
+    }
+    func imageViewUI(image: UIImage?) -> UIImageView {
+        let vUI = UIImageView(image: image)
+    
+        return  vUI
+    }
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +89,14 @@ class ThirdViewController: UIViewController {
 //        total.text = "$\(totalPrices)"
 //    }
     
-   
+//    @IBAction func calculate(_ sender: Any) {
+//        let prices = Double(price.text!)!
+//        let salesTaxs = Double(salesTax.text!)!
+//
+//        let totalSalesTaxs = prices * salesTaxs
+//        let totalPrices = prices + totalSalesTaxs
+//        totalLabel.text = "$\(totalPrices)"
+//    }
 
 }
 

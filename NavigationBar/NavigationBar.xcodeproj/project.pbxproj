@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B1288CF24024E3A00D04923 /* FiftheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1288CE24024E3A00D04923 /* FiftheViewController.swift */; };
+		3B1288D124025BB300D04923 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1288D024025BB300D04923 /* Test.swift */; };
+		3B1288D324025C3C00D04923 /* NavigationBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAA32B23EDBCCF00C49A8D /* NavigationBarTests.swift */; };
 		3B734F7C23F92FAD0038ACC5 /* IonIconPDF in Resources */ = {isa = PBXBuildFile; fileRef = 3B734F7B23F92FAC0038ACC5 /* IonIconPDF */; };
 		3BAAA31323EDBCCD00C49A8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAA31223EDBCCD00C49A8D /* AppDelegate.swift */; };
 		3BAAA31523EDBCCD00C49A8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAA31423EDBCCD00C49A8D /* SceneDelegate.swift */; };
@@ -15,7 +18,6 @@
 		3BAAA31C23EDBCCD00C49A8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAAA31A23EDBCCD00C49A8D /* Main.storyboard */; };
 		3BAAA31E23EDBCCF00C49A8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BAAA31D23EDBCCF00C49A8D /* Assets.xcassets */; };
 		3BAAA32123EDBCCF00C49A8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAAA31F23EDBCCF00C49A8D /* LaunchScreen.storyboard */; };
-		3BAAA32C23EDBCCF00C49A8D /* NavigationBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAA32B23EDBCCF00C49A8D /* NavigationBarTests.swift */; };
 		3BAAA33723EDBCD000C49A8D /* NavigationBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAA33623EDBCD000C49A8D /* NavigationBarUITests.swift */; };
 		3BAAA34523EDBF8100C49A8D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAA34423EDBF8100C49A8D /* ThirdViewController.swift */; };
 		3BAC75B523F8FEAD00EF9265 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAC75B423F8FEAD00EF9265 /* FourthViewController.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B1288CE24024E3A00D04923 /* FiftheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiftheViewController.swift; sourceTree = "<group>"; };
+		3B1288D024025BB300D04923 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		3B734F7B23F92FAC0038ACC5 /* IonIconPDF */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IonIconPDF; sourceTree = "<group>"; };
 		3BAAA30F23EDBCCD00C49A8D /* NavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BAAA31223EDBCCD00C49A8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				3BAAA31D23EDBCCF00C49A8D /* Assets.xcassets */,
 				3BAAA31F23EDBCCF00C49A8D /* LaunchScreen.storyboard */,
 				3BAAA32223EDBCCF00C49A8D /* Info.plist */,
+				3B1288CE24024E3A00D04923 /* FiftheViewController.swift */,
+				3B1288D024025BB300D04923 /* Test.swift */,
 			);
 			path = NavigationBar;
 			sourceTree = "<group>";
@@ -285,6 +291,8 @@
 				3BAAA31723EDBCCD00C49A8D /* FirstViewController.swift in Sources */,
 				3BAAA34523EDBF8100C49A8D /* ThirdViewController.swift in Sources */,
 				3BAAA31323EDBCCD00C49A8D /* AppDelegate.swift in Sources */,
+				3B1288D124025BB300D04923 /* Test.swift in Sources */,
+				3B1288CF24024E3A00D04923 /* FiftheViewController.swift in Sources */,
 				3BAAA31523EDBCCD00C49A8D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BAAA32C23EDBCCF00C49A8D /* NavigationBarTests.swift in Sources */,
+				3B1288D324025C3C00D04923 /* NavigationBarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,4 +40,15 @@ class NavigationBarUITests: XCTestCase {
             }
         }
     }
+    
+    func testPerformanceMeasureMetrics() {
+          
+          self.measureMetrics([XCTPerformanceMetric.wallClockTime], automaticallyStartMeasuring: false) {
+           XCUIApplication().launch()
+           startMeasuring()
+             XCUIApplication().tabBars.buttons["Search"].tap()
+             stopMeasuring()
+                   
+          }
+       }
 }
