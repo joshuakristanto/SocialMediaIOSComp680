@@ -7,12 +7,21 @@
 //
 
 import UIKit
+struct CustomData {
+     var title: String
+     var url: String
+     var backgroundImage: UIImage
+ }
+class ThirdViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
-class ThirdViewController: UIViewController {
-
-//    @IBOutlet weak var total: UILabel!
+    @IBOutlet weak var myCollectionView: UICollectionView!
+    //    @IBOutlet weak var total: UILabel!
 //    @IBOutlet weak var price: UITextField!
 //    @IBOutlet weak var saleTax: UITextField!
+    
+    var ref: [String] = []
+    
+  
   static func calculate(price: Double) ->Double {
             let prices = price + 10
                
@@ -22,80 +31,20 @@ class ThirdViewController: UIViewController {
 //    @IBOutlet var scrollView: UIScrollView!
 //    @IBOutlet weak var imageView: UIStackView!
     
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        imageView.heightAnchor.constraint(equalToConstant: scrollView.frame.height - 100).isActive = true
-//         imageView.widthAnchor.constraint(equalToConstant: scrollView.frame.height - 40).isActive = true
-//        imageView.centerYAnchor.constraint(equalTo: scrollView.centerYAnchor).isActive = true
-//        imageView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
         
-        let scrollView = UIScrollView()
-           self.view.addSubview(scrollView)
+        let itemSize = UIScreen.main.bounds.width/3 - 2
+              
+              let layout = UICollectionViewFlowLayout()
+              layout.itemSize = CGSize(width: itemSize, height: itemSize)
+              
+              layout.minimumInteritemSpacing = 2
+              layout.minimumLineSpacing = 2
+              
+              myCollectionView.collectionViewLayout = layout
 
-           scrollView.translatesAutoresizingMaskIntoConstraints = false
-           NSLayoutConstraint.activate([
-             scrollView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-             scrollView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-             scrollView.topAnchor.constraint(equalTo: self.view.topAnchor),
-             scrollView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
-           ])
-        
-        let stackView = UIStackView()
-        stackView.axis = .vertical
-        stackView.alignment = .fill
-        stackView.spacing = 20
-        stackView.distribution = .fill
-        scrollView.addSubview(stackView)
-
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-          // Attaching the content's edges to the scroll view's edges
-          stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-          stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-          stackView.topAnchor.constraint(equalTo: scrollView.topAnchor),
-          stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-
-          // Satisfying size constraints
-          stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
-        ])
-//        imageView.translatesAutoresizingMaskIntoConstraints = false
-//        imageView.distribution = .fillEqually
-//        imageView.axis = .vertical
-//        imageView.spacing = 40
-        
-        let fileManager = FileManager.default
-        let bundleURL = Bundle.main.bundleURL
-        let assetURL = bundleURL.appendingPathComponent("HundredFreePic.bundle")
-
-        do {
-          let contents = try fileManager.contentsOfDirectory(at: assetURL, includingPropertiesForKeys: [URLResourceKey.nameKey, URLResourceKey.isDirectoryKey], options: .skipsHiddenFiles)
- var a = 0
-          for item in contents
-          {
-              print(item.lastPathComponent)
-//            let imageName = item.lastPathComponent
-            let image = UIImage(named: item.lastPathComponent)
-            
-            let one = UIImageView(image:  image)
-//            let one = UIImageView(image: (id)initWithContentsOfFile:(NSString *)item.lastPathComponent))
-            if(a < 101)
-            {
-            stackView.addArrangedSubview(one)
-             one.translatesAutoresizingMaskIntoConstraints = false
-             one.heightAnchor.constraint(equalToConstant: 200).isActive = true
-                one.clipsToBounds = true
-                one.contentMode = .scaleAspectFit
-                a = a + 1
-            }
-            }
-        }
-        catch let error as NSError {
-          print(error)
-        }
-        
-//        total.text = "$0.00"
-        // Do any additional setup after loading the view.
     }
 
 //    @IBAction func calculate(_ sender: Any) {
@@ -107,6 +56,61 @@ class ThirdViewController: UIViewController {
 //    }
     
    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
 
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width/2.5, height: collectionView.frame.width/2)
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+  
+        let fileManager = FileManager.default
+                let bundleURL = Bundle.main.bundleURL
+                let assetURL = bundleURL.appendingPathComponent("HundredFreePic.bundle")
+
+                do {
+                  let contents = try fileManager.contentsOfDirectory(at: assetURL, includingPropertiesForKeys: [URLResourceKey.nameKey, URLResourceKey.isDirectoryKey], options: .skipsHiddenFiles)
+         var a = 0
+                
+                  for item in contents
+                  {
+                      print(item.lastPathComponent)
+                    ref.append(item.lastPathComponent)
+        //            let imageName = item.lastPathComponent
+                    let image = UIImage(named: item.lastPathComponent)
+                    
+                    let one = UIImageView(image:  image)
+        //            let one = UIImageView(image: (id)initWithContentsOfFile:(NSString *)item.lastPathComponent))
+                    if(a < 101)
+                    {
+        //            stackView.addArrangedSubview(one)
+                     one.translatesAutoresizingMaskIntoConstraints = false
+                     one.heightAnchor.constraint(equalToConstant: 200).isActive = true
+                        one.clipsToBounds = true
+                        one.contentMode = .scaleAspectFit
+                        a = a + 1
+                    }
+                    }
+                }
+                catch let error as NSError {
+                  print(error)
+                }
+        return ref.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MyCell
+        cell.myImageView.image = UIImage(named: ref[indexPath.row])
+        cell.myImageView.translatesAutoresizingMaskIntoConstraints = false
+//        cell.myImageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        cell.myImageView.clipsToBounds = true
+        cell.myImageView.contentMode = .scaleAspectFit
+        return cell
+    }
 }
+
 
