@@ -110,43 +110,13 @@
                     <view key="view" contentMode="scaleToFill" id="OhS-ug-h20">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hlj-4A-jLN">
-                                <rect key="frame" x="35" y="44" width="342" height="750"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cKB-WK-fT4">
-                                        <rect key="frame" x="0.0" y="8" width="342" height="742"/>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="cKB-WK-fT4" firstAttribute="centerX" secondItem="Hlj-4A-jLN" secondAttribute="centerX" id="8gC-gU-Oqb"/>
-                                    <constraint firstItem="cKB-WK-fT4" firstAttribute="top" secondItem="Hlj-4A-jLN" secondAttribute="topMargin" id="BVQ-sb-qPp"/>
-                                    <constraint firstItem="cKB-WK-fT4" firstAttribute="bottom" secondItem="UYl-jt-IRA" secondAttribute="bottom" id="Pxv-5d-Wou"/>
-                                    <constraint firstAttribute="bottom" secondItem="cKB-WK-fT4" secondAttribute="bottom" id="daI-Wg-h33"/>
-                                    <constraint firstItem="cKB-WK-fT4" firstAttribute="leading" secondItem="UYl-jt-IRA" secondAttribute="leading" id="gSE-VY-GGw"/>
-                                    <constraint firstAttribute="trailing" secondItem="cKB-WK-fT4" secondAttribute="trailing" id="vOX-vH-kxX"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="bHW-lf-asY"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="UYl-jt-IRA"/>
-                            </scrollView>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="Hlj-4A-jLN" firstAttribute="leading" secondItem="Z48-KT-ZES" secondAttribute="leading" constant="35" id="Adh-LM-rx3"/>
-                            <constraint firstItem="Hlj-4A-jLN" firstAttribute="top" secondItem="Z48-KT-ZES" secondAttribute="top" id="Aw7-jg-aOk"/>
-                            <constraint firstItem="Z48-KT-ZES" firstAttribute="bottom" secondItem="Hlj-4A-jLN" secondAttribute="bottom" constant="19" id="IIk-T4-l7c"/>
-                            <constraint firstItem="Z48-KT-ZES" firstAttribute="trailing" secondItem="Hlj-4A-jLN" secondAttribute="trailing" constant="37" id="Okk-Sh-F0g"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Z48-KT-ZES"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="search" id="pmT-iv-I2U">
                         <inset key="imageInsets" minX="270" minY="270" maxX="270" maxY="270"/>
                         <inset key="landscapeImageInsets" minX="270" minY="270" maxX="270" maxY="270"/>
                     </tabBarItem>
-                    <connections>
-                        <outlet property="imageView" destination="cKB-WK-fT4" id="Toe-IS-DnR"/>
-                        <outletCollection property="ImageView" destination="cKB-WK-fT4" id="PzT-iT-HT7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SmQ-q2-snK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
