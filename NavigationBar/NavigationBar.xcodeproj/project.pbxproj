@@ -11,6 +11,7 @@
 		3B1288D124025BB300D04923 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1288D024025BB300D04923 /* Test.swift */; };
 		3B1288D324025C3C00D04923 /* NavigationBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAA32B23EDBCCF00C49A8D /* NavigationBarTests.swift */; };
 		3B2861762403DD74002051E0 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2861752403DD74002051E0 /* MyCell.swift */; };
+		3B71E7502424CCAB008FED25 /* ARTEST.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 3B71E74F2424CCAB008FED25 /* ARTEST.rcproject */; };
 		3B734F7C23F92FAD0038ACC5 /* IonIconPDF in Resources */ = {isa = PBXBuildFile; fileRef = 3B734F7B23F92FAC0038ACC5 /* IonIconPDF */; };
 		3BAAA31323EDBCCD00C49A8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAA31223EDBCCD00C49A8D /* AppDelegate.swift */; };
 		3BAAA31523EDBCCD00C49A8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAA31423EDBCCD00C49A8D /* SceneDelegate.swift */; };
@@ -47,6 +48,7 @@
 		3B1288CE24024E3A00D04923 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		3B1288D024025BB300D04923 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		3B2861752403DD74002051E0 /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		3B71E74F2424CCAB008FED25 /* ARTEST.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = ARTEST.rcproject; path = ../../../../ARTEST.rcproject; sourceTree = "<group>"; };
 		3B734F7B23F92FAC0038ACC5 /* IonIconPDF */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IonIconPDF; sourceTree = "<group>"; };
 		3BAAA30F23EDBCCD00C49A8D /* NavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BAAA31223EDBCCD00C49A8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				3BAAA34423EDBF8100C49A8D /* ThirdViewController.swift */,
 				3BAC75B423F8FEAD00EF9265 /* FourthViewController.swift */,
 				3BAAA31A23EDBCCD00C49A8D /* Main.storyboard */,
+				3B71E74F2424CCAB008FED25 /* ARTEST.rcproject */,
 				3BAAA31D23EDBCCF00C49A8D /* Assets.xcassets */,
 				3BAAA31F23EDBCCF00C49A8D /* LaunchScreen.storyboard */,
 				3BAAA32223EDBCCF00C49A8D /* Info.plist */,
@@ -298,6 +301,7 @@
 				3B1288D124025BB300D04923 /* Test.swift in Sources */,
 				3B1288CF24024E3A00D04923 /* FifthViewController.swift in Sources */,
 				3BAAA31523EDBCCD00C49A8D /* SceneDelegate.swift in Sources */,
+				3B71E7502424CCAB008FED25 /* ARTEST.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
